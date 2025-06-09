@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+<link rel="icon" href="img/A.png" type="image/png" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: true, zIndex: -1 },
+    particles: {
+      number: { value: 60 },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.2 },
+      size: { value: 2 },
+      move: { enable: true, speed: 0.3 }
+    },
+    interactivity: { events: { onhover: { enable: true, mode: "repulse" } } }
+  });
+</script>
+<div id="tsparticles"></div>
+
+<!-- Navbar -->
+<nav class="bg-gray-900/80 backdrop-blur-md shadow-xl sticky top-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl text-2xl md:text-1xl font-extrabold mx-auto flex justify-between items-center px-6 py-4">
+
+    <!-- Logo -->
+    <a href="#" class="text-2xl md:text-3xl font-extrabold tracking-wide text-white hover:text-orange-400 transition-colors duration-300">
+      My<span class="text-orange-400">Portfolio</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#about" class="text-white hover:text-orange-400 font-medium transition duration-300">Tentang Saya</a>
+      <a href="#skills" class="text-white hover:text-orange-300 font-medium transition duration-300">Skill</a>
+      <a href="#projects" class="text-white hover:text-yellow-400 font-medium transition duration-300">Proyek</a>
+      <a href="#contact" class="text-white hover:text-orange-200 font-medium transition duration-300">Kontak</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left px-6 md:px-20 bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+
+  <!-- Text Section -->
+  <div class="md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-6 animate-fade-in-up py-10">
+<h1 id="typing-text" class="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-orange-500 via-yellow-400 to-yellow-300 text-transparent bg-clip-text drop-shadow-xl whitespace-nowrap overflow-hidden border-r-4 border-yellow-400 pr-2">
+  <!-- Tulisan akan diketik lewat JS -->
+</h1>
+
+    <p class="text-xl md:text-2xl text-orange-200 font-medium max-w-md">
+      Web & Mobile Developer | Software Engineer
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-2">
+      <a href="#projects"
+        class="bg-orange-600 hover:bg-orange-700 px-6 py-3 rounded-xl shadow-lg text-white font-semibold transform transition duration-300 hover:scale-105">
+        🚀 Lihat Proyek Saya
+      </a>
+
+      <a href="CV-km-afif.pdf" download="CV-Afif.pdf"
+        class="border border-orange-400 bg-gradient-to-r from-orange-500 to-yellow-400 hover:from-orange-600 hover:to-yellow-500 text-white px-6 py-3 rounded-xl shadow-lg font-semibold transform transition duration-300 hover:scale-105">
+        📄 Download CV
+      </a>
+    </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
+    <div class="relative group">
+      <img src="img/A.png" alt="Ilustrasi Hero"
+        class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl border-4 border-orange-400 group-hover:scale-105 transition duration-300" />
+      <div class="absolute inset-0 rounded-full bg-gradient-to-r from-orange-500 to-yellow-400 opacity-20 group-hover:opacity-40 transition duration-500 blur-2xl z-[-1]"></div>
+    </div>
+  </div>
+</section>
+
+
+<!--about me-->
+<section class="py-20 px-6 mx-9 md:mx-auto my-10 rounded-xl shadow-xl bg-gradient-to-br from-gray-800 via-gray-900 to-black bg-opacity-60 backdrop-blur-md text-center md:text-left flex flex-col md:flex-row items-center gap-10">
+  <!-- Gambar Profil -->
+  <div class="md:w-1/3 flex justify-center">
+    <img 
+      src="img/A.png" 
+      alt="Foto Profil Saya" 
+      class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+    >
+  </div>
+
+  <!-- Konten About Me -->
+  <div class="md:w-2/3">
+    <h2 class="text-4xl font-bold mb-6 text-blue-400">About Me</h2>
+    
+    <p class="text-2xl text-gray-300 leading-relaxed mb-5 max-w-3xl">
+      Hai, saya Loyd—seorang pelajar dan pengembang muda yang selalu terpesona oleh keajaiban <span class="text-blue-400 font-semibold">teknologi</span> dan <span class="text-blue-400 font-semibold">sains</span>. Di usia saya sekarang, saya sedang menapaki jalan untuk menjadi ilmuwan sekaligus inovator digital.
+    </p>
+    
+    <p class="text-2xl text-gray-300 leading-relaxed mb-5 max-w-3xl">
+      Saya aktif mempelajari pengembangan <span class="text-purple-400 font-semibold">web</span> dan <span class="text-purple-400 font-semibold">aplikasi mobile</span>, serta senang bereksperimen dengan ide-ide yang mampu menyatukan logika dan kreativitas dalam dunia <span class="text-pink-400 font-semibold">coding</span>.
+    </p>
+
+    <p class="text-2xl text-gray-300 leading-relaxed mb-5 max-w-3xl">
+      Ketertarikan saya tidak berhenti di situ—saya juga menyelami bidang <span class="text-green-400 font-semibold">genetika</span>, <span class="text-green-400 font-semibold">kecerdasan buatan (AI)</span>, dan <span class="text-green-400 font-semibold">energi kosmik</span>. Saya percaya bahwa masa depan dibangun oleh mereka yang mampu menggabungkan ilmu lintas disiplin.
+    </p>
+    
+    <p class="text-2xl text-gray-300 leading-relaxed max-w-3xl">
+      Portfolio ini bukan hanya sekadar daftar proyek—ia adalah rekam jejak dari semangat saya untuk terus belajar, menjelajah, dan menciptakan masa depan lewat teknologi dan ilmu pengetahuan.
+    </p>
+  </div>
+</section>
+<!-- Skills -->
+<section id="skills" class="py-20 px-6 text-center bg-gray-900 bg-opacity-40 backdrop-blur-md rounded-xl shadow-xl mx-4 md:mx-20 my-10">
+  <h2 class="text-4xl font-bold mb-10 text-white">Skill Pemrograman</h2>
+  <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center items-center max-w-4xl mx-auto">
+    <!-- JavaScript -->
+    <div class="group relative">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
+    </div>
+    <!-- Python -->
+    <div class="group relative">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
+    </div>
+<!-- Tailwind CSS (Logo manual dari tailwindcss.com) -->
+<div class="group relative">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
+</div>
+    <!-- HTML5 -->
+    <div class="group relative">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
+    </div>
+    <!-- CSS3 -->
+    <div class="group relative">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
+    </div>
+    <!-- Git -->
+    <div class="group relative">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
+    </div>
+  </div>
+</section>
+
+
+<section class="py-20 px-6 bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-xl shadow-xl mx-9 md:mx-auto my-10 text-white">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-blue-400 text-center mb-10">Education</h2>
+
+    <div class="space-y-8">
+
+
+               <!-- Pendidikan 1 -->
+      <div class="bg-gray-900 bg-opacity-60 p-6 rounded-lg shadow-md hover:shadow-blue-400/30 transition duration-300">
+        <h3 class="text-2xl font-semibold text-white">SD Semeru 1</h3>
+        <p class="text-blue-300">2020</p>
+        <p class="mt-2 text-gray-300">
+         saya fokus mempelajari frotend Developer selain itu saya cukup mengguasai backend Developer
+        </p>
+      </div>
+
+
+      <!-- Pendidikan 2 -->
+      <div class="bg-gray-900 bg-opacity-60 p-6 rounded-lg shadow-md hover:shadow-blue-400/30 transition duration-300">
+        <h3 class="text-2xl font-semibold text-white">SMP PGRI 12</h3>
+        <p class="text-blue-300">2023</p>
+        <p class="mt-2 text-gray-300">
+         saya fokus mempelajari frotend Developer selain itu saya cukup mengguasai backend Developer
+        </p>
+      </div>
+
+            <!-- Pendidikan 3 -->
+      <div class="bg-gray-900 bg-opacity-60 p-6 rounded-lg shadow-md hover:shadow-blue-400/30 transition duration-300">
+        <h3 class="text-2xl font-semibold text-white">SMK 1 ciomas</h3>
+        <p class="text-blue-300">2024-2025</p>
+        <p class="mt-2 text-gray-300">
+         saya fokus mempelajari frotend Developer selain itu saya cukup mengguasai backend Developer
+        </p>
+      </div>
+
+
+</section>
+
+
+<!--Project-->
+<section id="projects" class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Proyek Saya</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 bg-opacity-40 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+            <h3 class="text-xl text-center font-bold mb-2 text-blue-400">Proyek Aplikasi Kalkulator</h3>
+      <img src="img/Upload files · Loydazzuka_laravel-portoAfif - Google Chrome 12_11_2024 3_30_27 PM(1).jpg" alt="Gambar Aplikasi Mobile" class="mb-4 rounded-md">
+      <p class="text-gray-300">aplikasi kalkulator</p>
+    </div>
+    <div class="bg-gray-800 bg-opacity-40 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold text-center mb-2 text-purple-400">Website Portfolio</h3>
+      <img src="img/Kalender Kosmik Loyd - Google Chrome 5_14_2025 8_11_06 PM.png" alt="Gambar Website Portfolio" class="mb-4 rounded-md">
+      <p class="text-gray-300">Portfolio personal dengan Tailwind CSS dan Vite, responsive dan modern.</p>
+    </div>
+    <div class="bg-gray-800 bg-opacity-40 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+      <h3 class="text-xl font-bold text-center text-center mb-2 text-pink-400">Eksperimen Genetik Virtual</h3>
+      <img src="img/" alt="Gambar Eksperimen Genetik Virtual" class="mb-4 rounded-md">
+      <p class="text-gray-300">Simulasi CRISPR berbasis web sebagai bagian dari pembelajaran genetika.</p>
+    </div>
+  </div>
+</section>
+  <!-- Quote Section -->
+  <section class="py-20 px-6 bg-gray-800 bg-opacity-20 backdrop-blur-md text-center rounded-xl mx-4 md:mx-20 my-10 shadow-xl">
+    <h2 class="text-2xl font-semibold mb-6 text-gray-300">💡 Kutipan Favorit</h2>
+    <blockquote class="text-xl italic text-gray-400 max-w-2xl mx-auto">
+      "The important thing is not to stop questioning. Curiosity has its own reason for existing." <br />
+      <span class="text-sm text-gray-500">– Albert Einstein</span>
+    </blockquote>
+  </section>
+
+  <!-- Contact Section -->
+<section class="py-20 px-6 bg-gray-800 bg-opacity-30 backdrop-blur-md text-center mt-10 rounded-xl mx-4 md:mx-20 shadow-xl">
+  <h2 class="text-3xl font-bold mb-4">Hubungi Saya</h2>
+  <p class="text-gray-400 mb-6">
+    Email: <span class="underline">afif.ghaitsi@gmail.com</span>
+  </p>
+  <a href="mailto:afif.ghaitsi@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg shadow-lg transition duration-300">
+    Kirim Email
+  </a>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 border-t border-gray-700 mt-10">
+    &copy; 2025 Afif. Semua Hak Dilindungi.
+  </footer>
+
+<script>
+  const text = "Hai, Saya Afif...";
+  const typingText = document.getElementById("typing-text");
+  let index = 0;
+
+  function type() {
+    if (index <= text.length) {
+      typingText.textContent = text.slice(0, index);
+      index++;
+      setTimeout(type, 150); // kecepatan ngetik (ms)
+    } else {
+      typingText.classList.remove("border-r-4"); // hapus kursor setelah selesai
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", type);
+</script>
+
+</body>
+</html>
