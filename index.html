@@ -10,8 +10,10 @@
 
   <title>Afif Portfolio</title>
 
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/A.png" type="image/png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -53,10 +55,10 @@
 
     <!-- Menu Desktop -->
     <div class="hidden md:flex space-x-6 ml-4">
-      <a href="#about" class="text-gray-200 hover:text-orange-400 transition duration-200 text-lg">Tentang Saya</a>
-      <a href="#skills" class="text-gray-200 hover:text-teal-400 transition duration-200 text-lg">Skill</a>
-      <a href="#projects" class="text-gray-200 hover:text-yellow-400 transition duration-200 text-lg">Proyek</a>
-      <a href="#contact" class="text-gray-200 hover:text-pink-300 transition duration-200 text-lg">Kontak</a>
+      <a href="#about me" class="text-gray-200 hover:text-orange-400 transition duration-200 text-xl">Tentang Saya</a>
+      <a href="#skills" class="text-gray-200 hover:text-teal-400 transition duration-200 text-xl">Skill</a>
+      <a href="#projects" class="text-gray-200 hover:text-yellow-400 transition duration-200 text-xl">Proyek</a>
+      <a href="#contact" class="text-gray-200 hover:text-pink-300 transition duration-200 text-xl">Kontak</a>
     </div>
   </div>
 </nav>
@@ -79,7 +81,7 @@
     I'm a <span class="italic">Frontend Developer</span>
   </h3>
 
-  <p class="mt-6 text-lg md:text-xl leading-relaxed text-gray-300 max-w-4xl mx-auto md:mx-2"
+  <p class="mt-6 text-xl md:text-xl leading-relaxed text-gray-300 max-w-4xl mx-auto md:mx-2"
      style="text-shadow: 0 0 6px rgba(73, 179, 101, 0.4);">
      Driven by creativity and innovation, I believe that great design has the power to change the world.<br />
     As a frontend developer, I strive to turn ideas into reality, creating seamless experiences that not
@@ -108,19 +110,29 @@
   </div>
 </div>
 
-  <!-- Image Section -->
-  <div class="md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
-    <div class="relative group">
-      <img src="img/A.png" alt="Ilustrasi Hero"
-        class="w-48 h-48 md:w-60 md:h-60 rounded-full shadow-2xl border-4 border-orange-400 group-hover:scale-105 transition duration-300" />
-      <div class="absolute inset-0 rounded-full bg-gradient-to-r from-orange-500 to-yellow-400 opacity-20 group-hover:opacity-40 transition duration-500 blur-2xl z-[-1]"></div>
-    </div>
+<!-- Image Section -->
+<div class="md:w-1/2 flex justify-center items-center mt-12 md:mt-0">
+  <div class="relative group">
+    
+    <!-- Efek Lingkaran Glow -->
+    <div class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-tr from-[#ff9900] via-[#ffaa33] to-[#ffee00] opacity-30 group-hover:opacity-50 transition duration-700 blur-3xl z-[-1]"></div>
+
+    <!-- Foto Profil -->
+    <img src="img/A.png" alt="Ilustrasi Hero"
+      class="w-52 h-52 md:w-64 md:h-64 rounded-full border-4 border-[#ffaa33] shadow-[0_0_60px_#ffaa3360] transition duration-500 transform group-hover:scale-110" />
+
+    <!-- Ring Neon Bergerak -->
+    <div class="absolute inset-0 rounded-full border-2 border-dashed border-[#ffaa33] animate-spin-slow group-hover:opacity-60 opacity-20 z-[-1]"></div>
+
   </div>
+</div>
+
 </section>
 
 
 <!--about me-->
-<section class="py-20 px-6 mx-9 md:mx-auto my-10 rounded-xl shadow-xl bg-gradient-to-br from-gray-800 via-gray-900 to-black bg-opacity-60 backdrop-blur-md text-center md:text-left flex flex-col md:flex-row items-center gap-10">
+<section id="about me" class="py-20 px-6 mx-9 md:mx-auto my-10 rounded-xl shadow-xl bg-gradient-to-br from-gray-800 via-gray-900 to-black bg-opacity-60 backdrop-blur-md text-center md:text-left flex flex-col md:flex-row items-center gap-10">
+
   <!-- Gambar Profil -->
   <div class="md:w-1/3 flex justify-center">
     <img 
@@ -147,11 +159,13 @@
     </p>
   </div>
 </section>
+
 <!-- Skills -->
 <section id="skills" class="py-20 px-6 text-center bg-gray-900 bg-opacity-40 backdrop-blur-md rounded-xl shadow-xl mx-4 md:mx-20 my-10">
   <h2 class="text-4xl font-bold mb-10 text-white">Skill Pemrograman</h2>
   <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-center items-center max-w-4xl mx-auto">
     <!-- JavaScript -->
+
     <div class="group relative">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
     </div>
@@ -159,22 +173,27 @@
     <div class="group relative">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
     </div>
+
 <!-- Tailwind CSS (Logo manual dari tailwindcss.com) -->
 <div class="group relative">
   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
 </div>
+
     <!-- HTML5 -->
     <div class="group relative">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
     </div>
+
     <!-- CSS3 -->
     <div class="group relative">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
     </div>
+
     <!-- Git -->
     <div class="group relative">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mx-auto transition transform group-hover:scale-110" />
     </div>
+
   </div>
 </section>
 
@@ -198,32 +217,59 @@
 </section>
 
 
-<!--Project-->
-<section id="projects" class="py-20 px-6 scroll-mt-16">
-  <h2 class="text-4xl font-bold text-center mb-16 text-white animate-fade-up duration-700"> Proyek Saya </h2>
-  <div class="grid md:grid-cols-3 gap-10">
-    
-    <!-- Proyek 1 -->
-    <div class="bg-gray-900 bg-opacity-50 backdrop-blur-xl p-6 rounded-2xl shadow-2xl transform hover:scale-[1.05] hover:shadow-pink-500/20 transition duration-500 animate-fade-up">
-      <h3 class="text-xl text-center font-bold mb-4 text-blue-400 drop-shadow-md tracking-wide">🧮 Aplikasi Kalkulator</h3>
-<img src="img/Upload files · Loydazzuka_laravel-portoAfif - Google Chrome 12_11_2024 3_30_27 PM(1).jpg" alt="..." class="mb-4 rounded-lg shadow-md hover:opacity-90 transition duration-300 object-cover w-full h-[180px]">      <p class="text-gray-300 text-sm leading-relaxed text-center">Aplikasi kalkulator sederhana dengan desain bersih dan responsif.</p>
-    </div>
-    
-    <!-- Proyek 2 -->
-    <div class="bg-gray-900 bg-opacity-50 backdrop-blur-xl p-6 rounded-2xl shadow-2xl transform hover:scale-[1.05] hover:shadow-purple-500/20 transition duration-500 animate-fade-up delay-100">
-      <h3 class="text-xl text-center font-bold mb-4 text-purple-400 drop-shadow-md tracking-wide">🌐 Kalender Kosmik</h3>
-      <img src="img/Kalender Kosmik Loyd.png" alt="..." class="mb-4 rounded-lg shadow-md hover:opacity-90 transition duration-300 object-cover w-full h-[180px]">      <p class="text-gray-300 text-sm leading-relaxed text-center">aplikasi untuk mengetahui lokasi terbitb bulan dan lokasi kita berada.</p>
-    </div>
-    
-    <!-- Proyek 3 -->
-<a href="https://liandhaartportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">
-  <div class="bg-gray-900 bg-opacity-50 backdrop-blur-xl p-6 rounded-2xl shadow-2xl transform hover:scale-[1.05] hover:shadow-pink-500/20 transition duration-500 animate-fade-up delay-200 cursor-pointer">
-    <h3 class="text-xl text-center font-bold mb-4 text-pink-400 drop-shadow-md tracking-wide">portofolio</h3>
-    <img src="img/portofolio.png" alt="..." class="mb-4 rounded-lg shadow-md hover:opacity-90 transition duration-300 object-cover w-full h-[180px]">
-    <p class="text-gray-300 text-sm leading-relaxed text-center">portofolio personal.</p>
-  </div>
-</a>
+<!-- Project Section -->
+<section id="projects" class="py-20 px-6 scroll-mt-16 bg-transparent relative z-10">
+  <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 text-[#00FFC3] tracking-wider drop-shadow-lg animate-fade-up duration-700">
+     Proyek Saya
+  </h2>
 
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+    <!-- Proyek 1 -->
+    <div class="group bg-gradient-to-br from-gray-900/60 to-gray-800/70 border border-[#00f5f9]/20 backdrop-blur-xl p-6 rounded-2xl shadow-[0_0_30px_#00f5f980] hover:shadow-[0_0_40px_#00f5f9aa] transform hover:scale-[1.05] transition duration-500">
+      <h3 class="text-xl font-bold text-center mb-4 text-[#00FFC3] tracking-wider group-hover:scale-105 transition">
+         Aplikasi Kalkulator
+      </h3>
+      <img src="img/Upload files · Loydazzuka_laravel-portoAfif - Google Chrome 12_11_2024 3_30_27 PM(1).jpg"
+        alt="Aplikasi Kalkulator" class="mb-4 rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full h-[180px] object-cover">
+      <p class="text-gray-300 text-sm text-center leading-relaxed">
+        Aplikasi kalkulator sederhana dengan desain bersih dan responsif.
+      </p>
+    </div>
+
+    <!-- Proyek 2 -->
+    <div class="group bg-gradient-to-br from-gray-900/60 to-gray-800/70 border border-purple-500/20 backdrop-blur-xl p-6 rounded-2xl shadow-[0_0_30px_#a855f780] hover:shadow-[0_0_40px_#a855f7aa] transform hover:scale-[1.05] transition duration-500 delay-100">
+      <h3 class="text-xl font-bold text-center mb-4 text-purple-400 tracking-wider group-hover:scale-105 transition">
+         Kalender Kosmik
+      </h3>
+      <img src="img/Kalender Kosmik Loyd.png" alt="Kalender Kosmik"
+        class="mb-4 rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full h-[180px] object-cover">
+      <p class="text-gray-300 text-sm text-center leading-relaxed">
+        Aplikasi untuk mengetahui lokasi terbit bulan dan posisi kita di langit.
+      </p>
+    </div>
+
+    <!-- Proyek 3 -->
+    <a href="https://liandhaartportfolio.netlify.app/" target="_blank" rel="noopener noreferrer"
+      class="group">
+      <div
+        class="bg-gradient-to-br from-gray-900/60 to-gray-800/70 border border-pink-400/20 backdrop-blur-xl p-6 rounded-2xl shadow-[0_0_30px_#ec489980] hover:shadow-[0_0_40px_#ec4899aa] transform hover:scale-[1.05] transition duration-500 delay-200 cursor-pointer">
+        <h3 class="text-xl font-bold text-center mb-4 text-pink-400 tracking-wider group-hover:scale-105 transition">
+           Portofolio Personal
+        </h3>
+        <img src="img/portofolio.png" alt="Portofolio"
+          class="mb-4 rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full h-[180px] object-cover">
+        <p class="text-gray-300 text-sm text-center leading-relaxed">
+          Portofolio pribadi yang menampilkan proyek-proyek saya.
+        </p>
+        <div class="mt-4 text-center">
+          <button
+            class="px-4 py-2 rounded-full border border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-black transition duration-300 text-sm font-semibold">
+            🌐 Kunjungi Website
+          </button>
+        </div>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -250,6 +296,7 @@
   </div>
 
   <!-- Contact Form -->
+   <section id="contact" class="max-w-3xl mx-auto mt-10">
   <form action="https://formspree.io/f/mblkovqy" method="POST"
     class="bg-black bg-opacity-60 p-8 rounded-2xl border border-[#00f5f9]/20 shadow-[inset_0_0_20px_#00f5f950] backdrop-blur text-left space-y-6 text-sm text-gray-200">
 
@@ -286,13 +333,34 @@
     </div>
   </form>
 
-  <!-- WhatsApp Button -->
-  <div class="mt-8">
-    <a href="https://wa.me/6288289062984" target="_blank"
-      class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#49B365] text-[#49B365] rounded-full text-lg font-semibold tracking-wide shadow-md hover:scale-105 hover:bg-[#49B365] hover:text-black transition duration-300">
-      📱 WhatsApp Langsung
-    </a>
-  </div>
+<!-- WhatsApp Button -->
+<div class="mt-10 flex justify-center">
+  <a href="https://wa.me/6288289062984" target="_blank"
+    class="relative inline-flex items-center justify-center gap-3 px-8 py-3 border-2 border-[#25D366] text-[#25D366] rounded-full text-lg font-bold tracking-wide shadow-[0_0_20px_#25D36655] transition-all duration-300 hover:bg-[#25D366]/90 hover:text-black hover:shadow-[0_0_30px_#25D366AA] group overflow-hidden">
+    
+    <!-- Animated Icon -->
+    <span class="text-2xl transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">📱</span>
+    WhatsApp Langsung
+
+    <!-- Shine Effect -->
+    <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 animate-[shine_1.5s_ease-in-out_infinite] pointer-events-none rounded-full"></span>
+  </a>
+</div>
+
+<!-- Shine Animation -->
+<style>
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+</style>
 </section>
 
 <!-- Typing Animation -->
@@ -313,10 +381,41 @@
 }
 </style>
 
-  <!-- Footer -->
-  <footer class="py-6 text-center text-gray-500 border-t border-gray-700 mt-10">
-    &copy; 2025 Afif. Semua Hak Dilindungi.
-  </footer>
+</section>
+<!-- Footer -->
+<footer class="mt-24 border-t border-[#00f5f9]/30 bg-gradient-to-tr from-black via-gray-900 to-black text-[#d1d1d1] py-10 text-center">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Social Icons -->
+    <div class="flex justify-center space-x-10 mb-6 text-4xl">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/kmafif9/" target="_blank" 
+         class="text-[#00f5f9] hover:text-pink-500 transition duration-300 drop-shadow-[0_0_10px_#00f5f9] hover:drop-shadow-[0_0_16px_#ff0099]">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/ghaitsi" target="_blank" 
+         class="text-[#00f5f9] hover:text-white transition duration-300 drop-shadow-[0_0_10px_#00f5f9] hover:drop-shadow-[0_0_16px_white]">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="flex justify-center space-x-6 md:space-x-12 text-base md:text-lg font-medium tracking-wide mb-6">
+      <a href="#about me" class="text-[#00f5f9] hover:text-orange-400 transition duration-300">Tentang Saya</a>
+      <a href="#skills" class="text-[#00f5f9] hover:text-teal-400 transition duration-300">Skill</a>
+      <a href="#projects" class="text-[#00f5f9] hover:text-yellow-400 transition duration-300">Proyek</a>
+      <a href="#contact" class="text-[#00f5f9] hover:text-pink-400 transition duration-300">Kontak</a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-sm md:text-base font-semibold tracking-widest text-gray-400">
+      &copy; 2025 Afif. Semua Hak Dilindungi.
+    </p>
+  </div>
+</footer>
+
 
 <script>
   const text = "Hai, Saya Afif...";

@@ -1,0 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Futuristic Neon Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* dark gray */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f5f9, #00c4b4);
+  border-radius: 9999px;
+  box-shadow: 0 0 10px #00f5f9;
+  border: 2px solid #1e293b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00fff7, #00b4a0);
+  box-shadow: 0 0 16px #00fff7;
+}
+
+/* Firefox Support */
+* {
+  scrollbar-color: #00f5f9 #111827;
+  scrollbar-width: thin;
+}
